@@ -3,7 +3,7 @@ spring:
     name: eureka-server
 
 server:
-  port: 8080
+  port: 8081
 
 eureka:
   instance:
@@ -18,4 +18,4 @@ eureka:
     fetch-registry: false
     #指向另外一个注册中心  相互守望
     serviceUrl:
-      defaultZone: http://localhost:8081/eureka/
+      defaultZone: http://localhost:8080/eureka/
