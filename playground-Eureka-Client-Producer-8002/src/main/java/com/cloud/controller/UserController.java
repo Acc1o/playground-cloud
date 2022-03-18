@@ -17,12 +17,10 @@ import org.springframework.web.client.RestTemplate;
 @RequestMapping("user")
 public class UserController {
 
-
-
     @GetMapping("hello")
     @ResponseBody
     public String hello(){
-        return "hello，我是生产者8001！！！！";
+        return "hello，我是生产者8002！！！！";
     }
 
 }

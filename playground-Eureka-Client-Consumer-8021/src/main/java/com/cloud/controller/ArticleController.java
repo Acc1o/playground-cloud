@@ -20,11 +20,6 @@ public class ArticleController {
     @Autowired
     private RestTemplate restTemplate;
 
-    @GetMapping("hello")
-    public String callHello(){
-        return "hello，我是消费者！！！！";
-    }
-
     //服务消费者
     @GetMapping("callHello")
     public String callHello2() {

@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.cloud</groupId>
-    <artifactId>playground-Eureka-Client-Producer-8001</artifactId>
+    <artifactId>playground-Eureka-Client-Producer-8002</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>playground-Eureka-Client-Producer-8001</name>
-    <description>playground-Eureka-Client-Producer-8001</description>
+    <name>playground-Eureka-Client-Producer-8002</name>
+    <description>playground-Eureka-Client-Producer-8002</description>
     <properties>
         <java.version>1.8</java.version>
         <spring.cloud-version>Hoxton.SR12</spring.cloud-version>

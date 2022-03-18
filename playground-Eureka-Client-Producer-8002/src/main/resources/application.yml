@@ -1,9 +1,9 @@
 spring:
   application:
-    name: eureka-client-consumer
+    name: eureka-client-prodocer
 
 server:
-  port: 8021
+  port: 8002
 
 eureka:
   instance:
