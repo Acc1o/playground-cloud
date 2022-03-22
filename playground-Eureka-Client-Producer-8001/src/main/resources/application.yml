@@ -1,6 +1,6 @@
 spring:
   application:
-    name: eureka-client-prodocer
+    name: eureka-client-producer
 
 server:
   port: 8001

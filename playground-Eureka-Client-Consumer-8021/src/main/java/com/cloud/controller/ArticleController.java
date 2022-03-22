@@ -23,6 +23,6 @@ public class ArticleController {
     //服务消费者
     @GetMapping("callHello")
     public String callHello2() {
-        return restTemplate.getForObject("http://eureka-client-prodocer/user/hello", String.class);
+        return restTemplate.getForObject("http://eureka-client-producer/user/hello", String.class);
     }
 }

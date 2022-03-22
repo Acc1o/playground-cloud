@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.cloud</groupId>
-    <artifactId>playground-Eureka-Client-Producer-8001</artifactId>
+    <artifactId>playground-Server-OpenFeign-8765</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>playground-Eureka-Client-Producer-8001</name>
-    <description>playground-Eureka-Client-Producer-8001</description>
+    <name>playground-Server-OpenFeign-8765</name>
+    <description>playground-Server-OpenFeign-8765</description>
     <properties>
         <java.version>1.8</java.version>
         <spring.cloud-version>Hoxton.SR12</spring.cloud-version>
@@ -21,6 +21,11 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
 
         <dependency>

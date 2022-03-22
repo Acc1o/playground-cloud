@@ -17,8 +17,6 @@ import org.springframework.web.client.RestTemplate;
 @RequestMapping("user")
 public class UserController {
 
-
-
     @GetMapping("hello")
     @ResponseBody
     public String hello(){
