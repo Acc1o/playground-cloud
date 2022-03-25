@@ -1,9 +1,10 @@
-spring:
-  application:
-    name: eureka-client-producer
 
 server:
-  port: 8001
+  port: 8090
+
+spring:
+  application:
+    name: hystrix-dashboard
 
 eureka:
   instance:
@@ -12,13 +13,14 @@ eureka:
     # 定义实例ID格式
     instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
   client:
-    #eureka.client.serviceUrl.defaultZone 的地址就是我们之前启动的 Eureka 服务的地址，
-    # 在启动的时候需要将自身的信息注册到 Eureka 中去。
     serviceUrl:
       defaultZone: http://EurekaServer8080.com:8080/eureka/,http://EurekaServer8081.com:8081/eureka/
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "localhost"
+
+#turbine:
+#  appConfig: eureka-client-producer,eureka-client-consumer,service-openfeign
+#  clusterNameExpression: "'default'"
+#  instanceUrlSuffix: /hystrix.stream

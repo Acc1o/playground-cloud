@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.websocket.server.ServerEndpoint;
+
 /**
  * @author ：THEFU
  * @date ：Created in 2022/3/22 11:26

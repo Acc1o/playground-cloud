@@ -1,5 +1,7 @@
 package com.cloud.service;
 
+import com.cloud.service.impl.PaymentFeignServiceImpl;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,10 +13,9 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @version: 1.0
  */
 @Component
-@FeignClient(value = "eureka-client-producer")//找 “eureka-client-producer” 微服务地址
+@FeignClient(value = "eureka-client-producer",fallback = PaymentFeignServiceImpl.class)//找 “eureka-client-producer” 微服务地址
 public interface PaymentFeignService {
 
     @GetMapping("/user/hello")
     public String hello();
-
 }
