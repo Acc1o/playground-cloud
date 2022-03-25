@@ -17,7 +17,7 @@
         <module>playground-Eureka-Server-8080</module>
         <module>playground-Eureka-Server-8081</module>
         <module>playground-Server-OpenFeign-8765</module>
-        <module>playground-Server-Hystrix-Dashboard-9010</module>
+        <module>playground-Server-Hystrix-Dashboard-8090</module>
     </modules>
 
     <properties>
